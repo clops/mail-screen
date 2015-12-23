@@ -74,6 +74,9 @@
 			return $this->evalIniData(array($var => $val));
 		}
 
+		public function isTestSystem() {
+			return (bool)$this->testsystem;
+		}
 
 		private function evalIniData( $ini ) {
 			foreach ($ini AS $key => $value) {
